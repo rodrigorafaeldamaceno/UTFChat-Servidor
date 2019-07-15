@@ -17,7 +17,8 @@ public class StartServer {
             //Cria os objetos necessário para instânciar o servidor
             JLabel lblMessage = new JLabel("UTFChat");
             JLabel lblIP = new JLabel("IP do servidor: 127.0.0.1");
-            Object[] texts = {lblMessage, lblIP};
+            JLabel lblPorta = new JLabel("Porta: 1099");
+            Object[] texts = {lblMessage, lblIP, lblPorta};
             JOptionPane.showMessageDialog(null, texts);
 
             //System.setSecurityManager(new RMISecurityManager());
