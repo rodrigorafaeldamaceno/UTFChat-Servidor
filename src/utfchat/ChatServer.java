@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package utfchat;
 
 import java.rmi.RemoteException;
@@ -35,8 +31,7 @@ public class ChatServer extends UnicastRemoteObject implements ChatServerInt {
                 ChatClientInt tmp = (ChatClientInt) v.get(i);
                 tmp.tell(s);
             } catch (Exception e) {
-                //problem with the client not connected.
-                //Better to remove it
+                System.out.println("Erro ao publicar.");
             }
         }
     }
